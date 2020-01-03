@@ -11,7 +11,7 @@ Command: <i>python upangsms.py -u (student ID) -b (birthdate enclosed with doubl
 Before staring, you must have a <b>Python</b> application installed in your system. Download it <a href="https://www.python.org/">here</a> and add the path where the python application is installed in the environment variables to further access python through command line.. After that install <i>requests</i> and <i>openpyxl</i> python modules using <i>python -m pip install</i> command using cmd. When all done you can now execute the command mention above. To expand more how to use it, follow this instruction below.<br/><br/>
 Type <i>python</i>, space and the <i>python script file</i> in the command line and add the following parameters <b>-u</b>/<b>-U</b>, <b>-b</b>/<b>-B</b>, <b>-p</b>/<b>-P</b>, where -u/-U stands for <b>Username</b>, -b/-B is for <b>Birth Date</b> and -p/-P is for <b>Password</b>.<br/>
 <b>Usage:</b>
-<li>
-  <ul>-U 03-1516-01234 *this is for the username*</ul>
-  <ul>-B "01|04|1994" *enclose birth date with double qoutes and separate mm/dd/YY with | sign</ul>
-</li>
+<ul>
+  <li>-U 03-1516-01234 *this is for the username*</li>
+  <li>-B "01|04|1994" *enclose birth date with double qoutes and separate mm/dd/YY with | sign</li>
+</ul>
