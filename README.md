@@ -16,7 +16,7 @@ Type <i>python</i>, space and the <i>python script file</i> in the command line 
   <li><b>-B "01|04|1994</b>" *enclose birth date with double qoutes and separate mm/dd/YY with | sign</li>
   <li><b>-P YourPassword</b> *if your password has space, enclose it with parenthesis*</li>
 </ul>
-Command: python upangsms.py -U 01-1314-01233 -B "01|04|1994" -P YourPassword<br/>
+Command: <i>python upangsms.py -U 01-1314-01233 -B "01|04|1994" -P YourPassword</i><br/>
 and press enter to execute the script..<br/><br/>
 <b><u>Excel File containing the transfered grades</u></b><br/>
 
