@@ -21,3 +21,9 @@ and press enter to execute the script..<br/><br/>
 <b><u>Excel File containing the transfered grades</u></b><br/>
 
 ![alt text](https://user-images.githubusercontent.com/45601866/71725800-229ab300-2e70-11ea-8a2c-0e9b21e389c4.png)
+<br/>
+
+# Converting Grades To Document Format
+The script is also capable of converting the grades from the grading portal to a document type format *(.docx)*... You just have to add <b>--download</b> / <b>-d</b> / <b>-D</b> parameter at the end of the command when running the python script. The script will download an <b>HTML</b> file copy of your grades and will convert it into a document type format. Below is the image of a sample converted document format of grades from the grading portal... <br/>
+
+![alt text](https://user-images.githubusercontent.com/45601866/71755812-784e7a00-2ec7-11ea-94be-14fec65aa1ee.png)
