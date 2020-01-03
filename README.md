@@ -8,5 +8,5 @@ Command: <i>python upangsms.py -u (student ID) -b (birthdate enclosed with doubl
 <br/>
 ![alt text](https://user-images.githubusercontent.com/45601866/71725795-1f9fc280-2e70-11ea-8295-ecb937db4497.png)<br/>
 <b>How to properly use the script:</b><br/>
-Before staring, you must have a <b>Python</b> application installed in your system. Download it <a href=">here</a> and add the path where the python application is installed in the environment variables to further access python through command line.. After that install <i>requests</i> and <i>openpyxl</i> python modules using <i>python -m pip install</i> command. When all done you can now execute the command mention above. To expand more how to use it, follow this instruction below.<br/>
- 
+Before staring, you must have a <b>Python</b> application installed in your system. Download it <a href="https://www.python.org/">here</a> and add the path where the python application is installed in the environment variables to further access python through command line.. After that install <i>requests</i> and <i>openpyxl</i> python modules using <i>python -m pip install</i> command using cmd. When all done you can now execute the command mention above. To expand more how to use it, follow this instruction below.<br/>
+Type <i>python</i>, space and the python file in the command line and add the following parameters <b>-u</b>/<b>-U</b>, <b>-b</b>/<b>-B</b>, <b>-p</b>/<b>-P</b>. -u/-U stands for <b>Username</b>, use it like this: -u (student ID) *without parenthesis*
