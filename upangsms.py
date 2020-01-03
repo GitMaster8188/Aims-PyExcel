@@ -2,6 +2,8 @@ import time
 import requests
 import sys
 import os
+import win32com.client
+import webbrowser
 from openpyxl import load_workbook
 from openpyxl.styles import Font
 from openpyxl import Workbook
@@ -47,6 +49,29 @@ class Aims:
             print(error)
             time.sleep(3)
             sys.exit(0)
+
+    def convert_to_doc(self, html_file, doc_file, g_info):
+        try:
+            os.chdir("Accounts")
+            if not os.path.isdir(self.login_data["txtUser"]):
+                os.mkdir(self.login_data["txtUser"])
+            os.chdir(self.login_data["txtUser"])
+            file = open(html_file, "w+")
+            file.write(g_info)
+            file.close()
+            print("Downloading and Converting to document format ...", end="\r", flush=True)
+            word = win32com.client.Dispatch('Word.Application')
+            doc = word.Documents.Add(r"{}\{}".format(os.getcwd(), "%s" % html_file))
+            doc.SaveAs(r"{}\{}".format(os.getcwd(), "%s" % doc_file), FileFormat=0)
+            doc.Close()
+            word.Quit()
+            return True
+        except Exception as error:
+            os.remove("grades.html")
+            os.chdir("../")
+            os.rmdir(self.login_data["txtUser"])
+            os.chdir("../")
+            return error
 
 class Serialize:
     def __init__(self, grades):
@@ -143,6 +168,15 @@ class Arguments:
 
         return True
 
+    def check_download_params(self, parameters):
+        try:
+            if parameters[-1] not in self.system_parameters[6:9]:
+                return False
+        except IndexError as error:
+            return error
+
+        return True
+
 aims_urls = {
     "login_url": "https://upangsms.phinma.edu.ph/upang/process/validate.php?userType=1",
     "grades_url": "https://upangsms.phinma.edu.ph/upang/students/grades.php?mainID=106&menuDesc=Grades"
@@ -165,13 +199,16 @@ if __name__ == "__main__":
         os.mkdir("Accounts")
     session = requests.session()
     account = Aims(session, login_data, login_return)
-    arguments = Arguments(["-U", "-u", "-B", "-b", "-P", "-p", "--H", "--h", "-h", "-H", "--help"])
+    arguments = Arguments(["-U", "-u", "-B", "-b", "-P", "-p", "--download", "-d", "-D", "--H", "--h", "-h", "-H", "--help"])
     params_check = arguments.check_arguments(sys.argv[1:])
     if params_check is not True:
         if params_check is not None:
             print("Invalid Arguments. Please enter an appropriate one")
             time.sleep(2)
             sys.exit(0)
+        webbrowser.open("https://github.com/IAmArien/Aims-PyExcel/blob/master/README.md")
+        time.sleep(2)
+        sys.exit(0)
     credentials = {"student_id": None, "b_month": None, "b_day": None, "b_year": None, "password": None}
     for i in range(0, len(sys.argv[1:])):
         try:
@@ -189,12 +226,22 @@ if __name__ == "__main__":
             sys.exit(0)
     print("Authenticating account ...", end="\r", flush=True)
     if account.login(aims_urls["login_url"], credentials["student_id"], credentials["b_month"], credentials["b_day"], credentials["b_year"], credentials["password"]):
-        grades_list = list(account.yield_grades(aims_urls["grades_url"]).split("\n"))
+        grades_info = account.yield_grades(aims_urls["grades_url"])
+        grades_list = list(grades_info.split("\n"))
         account_info = Serialize(grades_list)
         student_id = account_info.yield_student_info(117)["student_id"][0]
         fullname = account_info.yield_student_info(117)["fullname"][0]
-        status = {"index": 139, "digits": 173, "columns": [], "rows": [], "temp_rows": []}
         print("Account: %s ( %s )" % (fullname, student_id))
+        download_params_check = arguments.check_download_params(sys.argv[1:])
+        if download_params_check:
+            if account.convert_to_doc("grades.html", "grades.docx", grades_info) is True:
+                print("[ ✔ ] Grades Successfully Downloaded and Converted To Document Format")
+                print("Check here: %s" % (os.getcwd()))
+            else:
+                print("[ ✘ ] Failed To Convert Grades ... Please try again later")
+            time.sleep(3)
+            sys.exit(0)
+        status = {"index": 139, "digits": 173, "columns": [], "rows": [], "temp_rows": []}
         collect_stats = "Collecting Grades From Grading Portal, Please Wait "
         status_bar_count = 1
         time.sleep(1)
