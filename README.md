@@ -12,6 +12,11 @@ Before staring, you must have a <b>Python</b> application installed in your syst
 Type <i>python</i>, space and the <i>python script file</i> in the command line and add the following parameters <b>-u</b>/<b>-U</b>, <b>-b</b>/<b>-B</b>, <b>-p</b>/<b>-P</b>, where -u/-U stands for <b>Username</b>, -b/-B is for <b>Birth Date</b> and -p/-P is for <b>Password</b>.<br/>
 <b>Usage:</b>
 <ul>
-  <li>-U 03-1516-01234 *this is for the username*</li>
-  <li>-B "01|04|1994" *enclose birth date with double qoutes and separate mm/dd/YY with | sign</li>
+  <li><b>-U 01-1314-01233</b> *this is for the username, or the student id*</li>
+  <li><b>-B "01|04|1994</b>" *enclose birth date with double qoutes and separate mm/dd/YY with | sign</li>
+  <li><b>-P YourPassword</b> *if your password has space, enclose it with parenthesis*</li>
 </ul>
+Command: python upangsms.py -U 01-1314-01233 -B "01|04|1994" -P YourPassword<br/>
+and press enter to execute the script..<br/><br/>
+<b><u>Excel File containing the transfered grades</u></b><br/>
+![alt text](https://user-images.githubusercontent.com/45601866/71725800-229ab300-2e70-11ea-8a2c-0e9b21e389c4.png)
