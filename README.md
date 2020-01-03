@@ -19,4 +19,5 @@ Type <i>python</i>, space and the <i>python script file</i> in the command line 
 Command: python upangsms.py -U 01-1314-01233 -B "01|04|1994" -P YourPassword<br/>
 and press enter to execute the script..<br/><br/>
 <b><u>Excel File containing the transfered grades</u></b><br/>
+
 ![alt text](https://user-images.githubusercontent.com/45601866/71725800-229ab300-2e70-11ea-8a2c-0e9b21e389c4.png)
