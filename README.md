@@ -1,0 +1,3 @@
+# Aims-PyExcel
+Aims PyExcel is a python script capable of transferring grades from the grading portal (Aims) to an Excel File.. The user needs to include his/her username, birth date and password, same as how they input their credentials in grading portal or the website where grades can be viewed... 
+
