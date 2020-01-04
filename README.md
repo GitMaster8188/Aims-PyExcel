@@ -61,7 +61,8 @@ The following format of input to birthdate is accepted:<br/><br/>
 <b>Birth Day</b><br/>
 Birthday must be in the format of 01 to 31, or 01 - 29/28 if it's February.<br/><br/>
 <b>Birth Year</b><br/>
-Birthyear must be in the format of 4 digit numbers, example is 1995 or 1997 etc.
+Birthyear must be in the format of 4 digit numbers, example is 1995 or 1997 etc.<br/><br/>
+<b>Usage: </b> *-b "02|23|1997"* for February 23, 1997
 
 # Disclaimer !!!
 <b>NOTE:</b> This application is for downloading student records from specific school given. It doesn't do any harmful effects and doesn't promote
