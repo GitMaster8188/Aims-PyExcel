@@ -35,3 +35,36 @@ you can also try <b>-d</b> or <b>-D</b> parameter like this.
 # HELP
 To access this <b>README.md</b> file using the script, just type *python the_python_script_file --help* and the script will redirect you to this page to discuss the needed instructions.<br/>
 <b>Parameters: </b> --H , --h , -h , -H , --help<br/>
+<b>Usage: </b> *python upangsms.py --help*
+
+# Using an EXE (Executable Python Script)
+If you don't want to manually execute the python script using python program, just download the *.exe* executable file and run it in any windows system. The program will just going to ask you for your credentials such as <b>Username, Birth Date, Password</b>...<br/>
+<br/>
+<b>Birth Date Issue</b><br/>
+The following format of input to birthdate is accepted:
+<b>Birth Month</b>
+<ul>
+  <li>01 - January </li>
+  <li>02 - February </li>
+  <li>03 - March </li>
+  <li>04 - April </li>
+  <li>05 - May </li>
+  <li>06 - June </li>
+  <li>07 - July </li>
+  <li>08 - August </li>
+  <li>09 - September </li>
+  <li>10 - October </li>
+  <li>11 - November </li>
+  <li>12 - December </li>
+ </ul>
+ <br/><b> If your birth month is August then you must enter 08. </b><br/>
+ 
+<b>Birth Day</b>
+Birthday must be in the format of 01 to 31, or 01 - 29/28 if it's February.
+<b>Birth Year</b>
+Birthyear must be in the format of 4 digit numbers, example is 1995 or 1997 etc.
+
+# Disclaimer !!!
+<b>NOTE:</b> This application is for downloading student records from specific school given. It doesn't do any harmful effects and doesn't promote
+any idea that can be used to ruin school's records. The provided code is for analyzing and understanding not to be used for bad intentions. 
+Any illegal activities that could be done using this application or with the help of this is already not part of the creator's responsibilities.
