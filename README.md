@@ -41,7 +41,7 @@ To access this <b>README.md</b> file using the script, just type *python the_pyt
 If you don't want to manually execute the python script using python program, just download the *.exe* executable file and run it in any windows system. The program will just going to ask you for your credentials such as <b>Username, Birth Date, Password</b>...<br/>
 <br/>
 <b>Birth Date Issue</b><br/>
-The following format of input to birthdate is accepted:
+The following format of input to birthdate is accepted:<br/>
 <b>Birth Month</b>
 <ul>
   <li>01 - January </li>
@@ -59,12 +59,12 @@ The following format of input to birthdate is accepted:
  </ul>
  <br/><b> If your birth month is August then you must enter 08. </b><br/>
  
-<b>Birth Day</b>
-Birthday must be in the format of 01 to 31, or 01 - 29/28 if it's February.
-<b>Birth Year</b>
+<b>Birth Day</b><br/>
+Birthday must be in the format of 01 to 31, or 01 - 29/28 if it's February.<br/>
+<b>Birth Year</b><br/>
 Birthyear must be in the format of 4 digit numbers, example is 1995 or 1997 etc.
 
 # Disclaimer !!!
 <b>NOTE:</b> This application is for downloading student records from specific school given. It doesn't do any harmful effects and doesn't promote
 any idea that can be used to ruin school's records. The provided code is for analyzing and understanding not to be used for bad intentions. 
-Any illegal activities that could be done using this application or with the help of this is already not part of the creator's responsibilities.
+Any illegal activities that could be done using understanding the application's codes or with the help of this is already not part of the creator's responsibilities.
