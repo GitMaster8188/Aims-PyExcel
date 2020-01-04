@@ -41,7 +41,7 @@ To access this <b>README.md</b> file using the script, just type *python the_pyt
 If you don't want to manually execute the python script using python program, just download the *.exe* executable file and run it in any windows system. The program will just going to ask you for your credentials such as <b>Username, Birth Date, Password</b>...<br/>
 <br/>
 <b>Birth Date Issue</b><br/>
-The following format of input to birthdate is accepted:<br/>
+The following format of input to birthdate is accepted:<br/><br/>
 <b>Birth Month</b>
 <ul>
   <li>01 - January </li>
@@ -57,9 +57,9 @@ The following format of input to birthdate is accepted:<br/>
   <li>11 - November </li>
   <li>12 - December </li>
  </ul>
- <br/><b> If your birth month is August then you must enter 08. </b><br/>
+ <b> If your birth month is August then you must enter 08. </b><br/><br/>
 <b>Birth Day</b><br/>
-Birthday must be in the format of 01 to 31, or 01 - 29/28 if it's February.<br/>
+Birthday must be in the format of 01 to 31, or 01 - 29/28 if it's February.<br/><br/>
 <b>Birth Year</b><br/>
 Birthyear must be in the format of 4 digit numbers, example is 1995 or 1997 etc.
 
