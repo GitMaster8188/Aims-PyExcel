@@ -58,7 +58,6 @@ The following format of input to birthdate is accepted:<br/>
   <li>12 - December </li>
  </ul>
  <br/><b> If your birth month is August then you must enter 08. </b><br/>
- 
 <b>Birth Day</b><br/>
 Birthday must be in the format of 01 to 31, or 01 - 29/28 if it's February.<br/>
 <b>Birth Year</b><br/>
