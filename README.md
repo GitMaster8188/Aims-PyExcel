@@ -38,6 +38,7 @@ To access this <b>README.md</b> file using the script, just type *python the_pyt
 <b>Usage: </b> *python upangsms.py --help*
 
 # Using an EXE (Executable Python Script)
+![alt text](https://user-images.githubusercontent.com/45601866/71773682-f4b28d00-2f9b-11ea-8ee6-45089994353f.png)
 If you don't want to manually execute the python script using python program, just download the *.exe* executable file and run it in any windows system. The program will just going to ask you for your credentials such as <b>Username, Birth Date, Password</b>...<br/>
 <br/>
 <b>Birth Date Issue</b><br/>
