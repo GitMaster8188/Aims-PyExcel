@@ -1,3 +1,4 @@
+import cgitb
 import time
 import requests
 import sys
@@ -7,6 +8,8 @@ import webbrowser
 from openpyxl import load_workbook
 from openpyxl.styles import Font
 from openpyxl import Workbook
+
+cgitb.enable()
 
 class Aims:
     def __init__(self, log_request, log_data, log_return):
